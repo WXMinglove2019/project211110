@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/reset.css">
+	<script src="js/rem.js"></script>
+</head>
+<style>
+    .login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        padding: 0 14px;
+        box-sizing: border-box;
+        width: 7.5rem;
+    }
+    .logo{
+        width: 2.8rem;
+        margin: 0.9rem 0;
+    }
+    ._input{
+        border-radius: 3px;
+        width: 100%;
+        height: 0.88rem;
+        padding: 0 0.2rem;
+        box-sizing: border-box;
+        margin-bottom: 0.2rem;
+        border:1px solid #DCDCDC;
+    }
+    ._margin{
+        margin: 0.4rem 0;
+    }
+    .login span{
+        color: #888888 ;
+    }
+</style>
+<body>
+    <div class="pages login ">
+        <img src="./img/logo.png" alt="" class="logo">
+        <select name="" id="" class="_input" placeholder="角色选择">
+            <option value ="volvo">Volvo</option>
+        </select>
+        <input type="text" class="_input" placeholder="请输入手机号">
+        <input type="text" class="_input" placeholder="请输入密码">
+        <div class="btn _margin">登录</div>
+        <span>忘记密码请联系管理员</span>
+    </div>
+</body>
+</html>
