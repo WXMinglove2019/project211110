@@ -90,3 +90,12 @@ table {
 input{
     border:1px solid #DCDCDC;
 }
+.list_item_head{
+    background: #0099CE;
+    color: #fff;
+    padding:0 .3rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .7rem;
+}

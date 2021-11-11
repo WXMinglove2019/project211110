@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>审批</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/rem.js"></script>
+</head>
+<style>
+    .information {
+        margin-top: 0.2rem;
+    }
+    
+    .information_head {
+        background: #0099CE;
+        color: #fff;
+        padding: 0 .3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: .7rem;
+    }
+    
+    ul {
+        margin: .3rem;
+    }
+    
+    ul li {
+        margin-bottom: 10px;
+    }
+    
+    ul li .aa {
+        color: #888888;
+        display: block;
+        width: 75px;
+        float: left;
+        text-align: right;
+        padding-right: 8px;
+    }
+    
+    ul li span {
+        color: #000000;
+    }
+    
+    img {
+        width: 30px;
+        height: 40px;
+    }
+    
+    .first {
+        margin-left: 85px;
+        margin-bottom: 10px;
+    }
+    
+    .second {
+        margin-left: 85px;
+    }
+    
+    p {
+        font-size: .24rem;
+    }
+</style>
+
+<body>
+    <div class="information">
+        <div class="information_head">
+            <span>工具信息</span>
+        </div>
+        <div class="imformation_list">
+            <!-- 1.让li右对齐 -->
+            <ul class="list">
+                <li><span class="aa">工具编号：</span><span>0001</span></li>
+                <li><span class="aa">工具名称：</span><span>工具一</span></li>
+                <li><span class="aa">采购时间：</span><span>2021-09-21</span></li>
+                <li><span class="aa">采购金额：</span><span>￥2000.00</span></li>
+                <li><span class="aa">工具负责人：</span><span>周瑜</span></li>
+                <li><span class="aa">所属大区：</span><span>华东</span></li>
+                <li><span class="aa">所属小区：</span><span>上海</span></li>
+                <li><span class="aa">工具明细：</span><span>明细</span></li>
+                <li><span class="aa">工具大类：</span><span>大类</span></li>
+                <li><span class="aa">工具小类：</span><span>小类</span></li>
+                <li><span class="aa">位置：</span><span>上海市浦东新区</span></li>
+                <li><span class="aa">状态：</span><span>空闲</span></li>
+                <li><span class="aa">当前使用人：</span><span>张宇</span></li>
+                <li><span class="aa">备注：</span><span>备注</span></li>
+                <li><span class="aa">附件：</span>
+                    <div class="first"><img src="img/file.png" alt="">
+                        <p>使用说明书</p>
+                    </div>
+                    <div class="second"><img src="img/file.png" alt="">
+                        <p>检验合格证</p>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
