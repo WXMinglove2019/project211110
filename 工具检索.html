@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工具检索</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+	<script src="js/rem.js"></script>
+</head>
+<style>
+    .page_list{
+        box-sizing: border-box;
+        background: #EDEDED;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        font-size: .24rem;
+    }
+    .tabber{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: .9rem;
+        background:#fff;
+        display: flex;
+        justify-content: space-around;
+    }
+    .tabber_item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabber_item img{
+        width: .45rem;
+    }
+    .tab{
+        width: 100%;
+        background:#fff;
+        color: #000;
+        display:flex;
+        position: fixed;
+        top: 0;
+    }
+    /* .tab div{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: .8rem;
+        line-height: .8rem;
+    } */
+    .tab span{
+        height: 100%;
+    }
+    .tab .active{
+        color: #0099CE;
+        border-bottom: 2px solid #0099CE;
+    }
+    .tool_page .list_wrap{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        overflow-y: auto;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .list_item{
+        margin-top: .2rem;
+    }
+    .list_item_head{
+        background: #0099CE;
+        color: #fff;
+        padding:0 .3rem ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: .7rem;
+    }
+    .list_item_main{
+        padding:0 .3rem ;
+        background: #fff;
+    }
+    .line{
+        line-height: .56rem;
+        display: flex;
+        align-items: center;
+    }
+    .line img{
+        width: .36rem;
+        height: .36rem;
+        margin-right: .3rem;
+    }
+    .line_text{
+        flex: 1;
+    }
+    .list_item_foot{
+        display: flex;
+        padding:0.15rem .3rem ;
+        background: #fff;
+        border-top: 1px solid #EDEDED;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .list_item_foot .btn_border{
+        color: #0099CE;
+        border: 1px solid #0099CE;
+        border-radius: .06rem;
+        padding: .08rem .26rem;
+        margin-left: .2rem;
+
+    }
+    .list_item_foot .line{
+        flex: 1;
+    }
+    .list_item_foot .line .line_icon img{
+        width: .32rem;
+        height: .32rem;
+        margin-right: .16rem;
+    }
+    .list_item_foot .line .line_icon span{
+        margin-right: .2rem;
+    }
+    .list_item_foot .line .line_icon .line_icon_dot{
+        width: .16rem;
+        height: .16rem;
+        margin-right: .16rem;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .green{
+        background: #20C900;
+    }
+    .red{
+        background: #FF0000;
+    }
+    .tool{
+        padding: .15rem .3rem;
+        align-items: center; 
+        font-size: .24rem;
+        box-sizing: border-box;
+    }
+    .select_state{
+        border-radius: 3px;
+        width: 1.4rem;
+        height: 0.6rem;
+        padding: .14rem 0.15rem;
+        box-sizing: border-box;
+        margin-right: 0.1rem;
+        border:1px solid #DCDCDC;
+       
+    }
+    .tool_right{
+        flex: 1;
+        height: 0.6rem;
+        border-radius: 3px;
+        border:1px solid #DCDCDC;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tool_right input{
+        height: 100%;
+        border: 0;
+        padding-left: .2rem;
+        flex: 1;
+    }
+    .tool_right img{
+        height: 70%;
+        margin-right: .15rem;
+    }
+</style>
+<body>
+    <div class="page_list tool_page">
+        <div class="tab tool">
+            <select name="" id="" class="select_state">
+                <option value ="状态">状态</option>
+            </select>
+            <div class="tool_right">
+                <input type="text" placeholder="请输入关键字"/>
+                <!-- 没图标 -->
+                <img src="/img/yeas.png" alt="">
+            </div>
+        </div>
+        <div class="list_wrap">
+            <div class="list_item">
+                <div class="list_item_head">
+                    <span>工具一</span>
+                    <span>工具编号：0001</span>
+                </div>
+                <div class="list_item_main">
+                    <div class="line">
+                        <div class="line_icon"><img src="./img/people.png" alt=""></div>
+                        <div class="line_text">工具负责人：刘宇</div>
+                    </div>
+                    <div class="line">
+                        <div class="line_icon"><img src="./img/people.png" alt=""></div>
+                        <div class="line_text">当前使用人：周瑜</div>
+                    </div>
+                    <div class="line">
+                        <div class="line_icon"><img src="./img/address.png" alt=""></div>
+                        <div class="line_text">上海市浦东新区张杨路666弄</div>
+                    </div>
+                </div>
+                <div class="list_item_foot">
+                    <div class="line">
+                        <div class="line_icon">
+                            <div class="line_icon_dot green"></div>
+                            <!-- <div class="line_icon_dot red"></div> -->
+                            <span>空闲</span>
+                        </div>
+                    </div>
+                    <span class="btn_border">查看</span>
+                    <span class="btn_border">借调</span>
+                </div>
+            </div>
+            <div class="list_item">
+                <div class="list_item_head">
+                    <span>工具一</span>
+                    <span>工具编号：0001</span>
+                </div>
+                <div class="list_item_main">
+                    <div class="line">
+                        <div class="line_icon"><img src="./img/people.png" alt=""></div>
+                        <div class="line_text">工具负责人：刘宇</div>
+                    </div>
+                    <div class="line">
+                        <div class="line_icon"><img src="./img/people.png" alt=""></div>
+                        <div class="line_text">当前使用人：周瑜</div>
+                    </div>
+                    <div class="line">
+                        <div class="line_icon"><img src="./img/address.png" alt=""></div>
+                        <div class="line_text">上海市浦东新区张杨路666弄</div>
+                    </div>
+                </div>
+                <div class="list_item_foot">
+                    <div class="line">
+                        <div class="line_icon">
+                            <!-- <div class="line_icon_dot green"></div> -->
+                            <div class="line_icon_dot red"></div>
+                            <span>损坏</span>
+                        </div>
+                    </div>
+                    <span class="btn_border">查看</span>
+                </div>
+            </div>
+        </div>
+        <div class="tabber">
+            <div class="tabber_item">
+                <img class="tabber_item_icon" src="/img/yeas.png"></img>
+                <span class="tabber_item_text">工具检索</span>
+            </div>
+            <div class="tabber_item">
+                <img class="tabber_item_icon" src="/img/time.png"></img>
+                <span class="tabber_item_text">借调记录</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

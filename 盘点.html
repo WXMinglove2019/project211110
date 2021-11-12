@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盘点</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+	<script src="js/rem.js"></script>
+</head>
+<style>
+    .page_list{
+        box-sizing: border-box;
+        background: #EDEDED;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        font-size: .24rem;
+    }
+    .add_btn{
+        width: 100%;
+        background:#fff;
+        color: #000;
+        display:flex;
+        position: fixed;
+        bottom: 0;
+    }
+    .add_btn{
+        background:#fff;
+        padding: .1rem .3rem;
+        box-sizing: border-box;
+    }
+    .add_btn .btn{
+        height: .8rem;
+        line-height: .8rem;
+    }
+    .list_wrap{
+        padding-top: .9rem;
+        padding-bottom: 1.2rem;
+        overflow-y: auto;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .list_item{
+        margin-bottom: .2rem;
+    }
+    .list_item_head_gray{
+        background: #A4A4A4;
+        color: #fff;
+        padding:0 .3rem ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: .7rem;
+        margin-bottom: .2rem;
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .list_item_head{
+        background: #0099CE;
+        color: #fff;
+        padding:0 .3rem ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: .7rem;
+    }
+    .list_item_main{
+        padding:0 .3rem ;
+        background: #fff;
+    }
+    .min_height{
+        min-height: 1.8rem;
+    }
+    .line{
+        line-height: .56rem;
+        display: flex;
+        align-items: center;
+    }
+    .line img{
+        width: .36rem;
+        height: .36rem;
+        margin-right: .3rem;
+    }
+    .line_text{
+        flex: 1;
+    }
+    .list_item_foot{
+        display: flex;
+        padding:0.15rem .3rem ;
+        background: #fff;
+        border-top: 1px solid #EDEDED;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .btn_border{
+        color: #0099CE;
+        border: 1px solid #0099CE;
+        border-radius: .06rem;
+        padding: .08rem .26rem;
+        margin-left: .2rem;
+        background: #fff;
+
+    }
+    .list_item_foot .line{
+        flex: 1;
+    }
+    .list_item_foot .line .line_icon img{
+        width: .32rem;
+        height: .32rem;
+        margin-right: .16rem;
+    }
+    .list_item_foot .line .line_icon span{
+        margin-right: .2rem;
+    }
+</style>
+<body>
+    <div class="page_list">
+        <div class="list_item_head_gray">
+            <span>工具一</span>
+            <span>工具编号：0001</span>
+        </div>
+        <div class="list_wrap">
+
+            <div class="list_item">
+                <div class="list_item_head">
+                    <span>盘点时间：2021-10-06</span>
+                    <span class="btn_border">修改</span>
+                </div>
+                <div class="list_item_main min_height">
+                    <div class="line">
+                        <div class="line_icon">盘点内容：</div>
+                        <div class="line_text">盘点内容</div>
+                    </div>
+                </div>
+            </div>
+            <div class="list_item">
+                <div class="list_item_head">
+                    <span>盘点时间：2021-10-06</span>
+                    <span class="btn_border">修改</span>
+                </div>
+                <div class="list_item_main min_height">
+                    <div class="line">
+                        <div class="line_icon">盘点内容：</div>
+                        <div class="line_text">盘点内容</div>
+                    </div>
+                </div>
+            </div>
+            <div class="list_item">
+                <div class="list_item_head">
+                    <span>盘点时间：2021-10-06</span>
+                    <span class="btn_border">修改</span>
+                </div>
+                <div class="list_item_main min_height">
+                    <div class="line">
+                        <div class="line_icon">盘点内容：</div>
+                        <div class="line_text">盘点内容</div>
+                    </div>
+                </div>
+            </div>
+            <div class="list_item">
+                <div class="list_item_head">
+                    <span>盘点时间：2021-10-06</span>
+                    <span class="btn_border">修改</span>
+                </div>
+                <div class="list_item_main min_height">
+                    <div class="line">
+                        <div class="line_icon">盘点内容：</div>
+                        <div class="line_text">盘点内容</div>
+                    </div>
+                </div>
+            </div>
+            <div class="list_item">
+                <div class="list_item_head">
+                    <span>盘点时间：2021-10-06</span>
+                    <span class="btn_border">修改</span>
+                </div>
+                <div class="list_item_main min_height">
+                    <div class="line">
+                        <div class="line_icon">盘点内容：</div>
+                        <div class="line_text">盘点内容</div>
+                    </div>
+                </div>
+            </div>
+            <div class="list_item">
+                <div class="list_item_head">
+                    <span>盘点时间：2021-10-06</span>
+                    <span class="btn_border">修改</span>
+                </div>
+                <div class="list_item_main min_height">
+                    <div class="line">
+                        <div class="line_icon">盘点内容：</div>
+                        <div class="line_text">盘点内容</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add_btn">
+            <div class="btn">新增盘点</div>
+        </div>
+
+    </div>
+</body>
+</html>
